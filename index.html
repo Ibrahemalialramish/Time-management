@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>رمضان - لوحة الإنتاجية</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts: Tajawal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="background-overlay"></div>
+
+    <div class="phone-lock-banner">
+      <span>📵 وضع التركيز: الهاتف في غرفة أخرى!</span>
+    </div>
+
+    <header class="main-header">
+      <h1>إنتاجية رمضان</h1>
+      <div class="progress-section">
+        <div class="progress-info">
+          <span class="progress-label">إنجاز اليوم</span>
+          <span id="progress-percentage" class="progress-percentage">0%</span>
+        </div>
+        <div class="progress-bar-container">
+          <div id="progress-fill" class="progress-fill" style="width: 0%"></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="dashboard-container">
+      <!-- Phase 1 -->
+      <section class="phase-card" id="phase-1">
+        <div class="phase-header">
+          <h2>الروحانيات والسكينة</h2>
+          <span class="phase-time">03:30 AM - 06:15 AM</span>
+        </div>
+        <div class="task-list">
+          <label class="task-item">
+            <input type="checkbox" class="task-checkbox" data-phase="1" />
+            <span class="custom-checkbox"></span>
+            <span class="task-text">السحور وصلاة الفجر</span>
+          </label>
+          <label class="task-item">
+            <input type="checkbox" class="task-checkbox" data-phase="1" />
+            <span class="custom-checkbox"></span>
+            <span class="task-text">أذكار الصباح وورد القرآن</span>
+          </label>
+        </div>
+      </section>
+
+      <!-- Phase 2 -->
+      <section class="phase-card" id="phase-2">
+        <div class="phase-header">
+          <h2>التعلم العميق</h2>
+          <span class="phase-time">06:15 AM - 09:30 AM</span>
+        </div>
+        <div class="task-list">
+          <label class="task-item">
+            <input type="checkbox" class="task-checkbox" data-phase="2" />
+            <span class="custom-checkbox"></span>
+            <span class="task-text">ساعات العمل/الدراسة الأكثر إنتاجية</span>
+          </label>
+          <label class="task-item">
+            <input type="checkbox" class="task-checkbox" data-phase="2" />
+            <span class="custom-checkbox"></span>
+            <span class="task-text">تركيز عالٍ بدون ملهيات</span>
+          </label>
+        </div>
+      </section>
+
+      <!-- Phase 3 -->
+      <section class="phase-card" id="phase-3">
+        <div class="phase-header">
+          <h2>الاستشفاء</h2>
+          <span class="phase-time">09:30 AM - 12:30 PM</span>
+        </div>
+        <div class="task-list">
+          <label class="task-item">
+            <input type="checkbox" class="task-checkbox" data-phase="3" />
+            <span class="custom-checkbox"></span>
+            <span class="task-text">قيلولة قصيرة / راحة ذهنية</span>
+          </label>
+          <label class="task-item">
+            <input type="checkbox" class="task-checkbox" data-phase="3" />
+            <span class="custom-checkbox"></span>
+            <span class="task-text">صلاة الضحى</span>
+          </label>
+        </div>
+      </section>
+
+      <!-- Phase 4 -->
+      <section class="phase-card" id="phase-4">
+        <div class="phase-header">
+          <h2>التثبيت</h2>
+          <span class="phase-time">01:15 PM - 04:00 PM</span>
+        </div>
+        <div class="task-list">
+          <label class="task-item">
+            <input type="checkbox" class="task-checkbox" data-phase="4" />
+            <span class="custom-checkbox"></span>
+            <span class="task-text">صلاة الظهر ومراجعة مهام العمل</span>
+          </label>
+          <label class="task-item">
+            <input type="checkbox" class="task-checkbox" data-phase="4" />
+            <span class="custom-checkbox"></span>
+            <span class="task-text">تعلم مهارة جديدة</span>
+          </label>
+        </div>
+      </section>
+
+      <!-- Phase 5 -->
+      <section class="phase-card" id="phase-5">
+        <div class="phase-header">
+          <h2>النشاط البدني</h2>
+          <span class="phase-time">04:00 PM - 06:00 PM</span>
+        </div>
+        <div class="task-list">
+          <label class="task-item">
+            <input type="checkbox" class="task-checkbox" data-phase="5" />
+            <span class="custom-checkbox"></span>
+            <span class="task-text">رياضة خفيفة قبل الإفطار</span>
+          </label>
+          <label class="task-item">
+            <input type="checkbox" class="task-checkbox" data-phase="5" />
+            <span class="custom-checkbox"></span>
+            <span class="task-text">صلاة العصر والتحضير للإفطار</span>
+          </label>
+        </div>
+      </section>
+
+      <!-- Phase 6 -->
+      <section class="phase-card" id="phase-6">
+        <div class="phase-header">
+          <h2>المساء</h2>
+          <span class="phase-time">06:30 PM - 11:00 PM</span>
+        </div>
+        <div class="task-list">
+          <label class="task-item">
+            <input type="checkbox" class="task-checkbox" data-phase="6" />
+            <span class="custom-checkbox"></span>
+            <span class="task-text">الإفطار وصلاة المغرب</span>
+          </label>
+          <label class="task-item">
+            <input type="checkbox" class="task-checkbox" data-phase="6" />
+            <span class="custom-checkbox"></span>
+            <span class="task-text">صلاة العشاء والتراويح</span>
+          </label>
+          <label class="task-item">
+            <input type="checkbox" class="task-checkbox" data-phase="6" />
+            <span class="custom-checkbox"></span>
+            <span class="task-text">جلسة عائلية ونوم مبكر</span>
+          </label>
+        </div>
+      </section>
+    </main>
+
+    <div id="motivational-toast" class="toast hidden">
+      <p id="toast-message"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
